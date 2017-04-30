@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Faculty.master.cs" Inherits="Login_Faculty_Faculty" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+       /* #fam{
+            background-color: blueviolet
+        }*/
+       #fan{
+           background-color: #Ff533d;
+       }
+       #nam{
+            color: black;
+       }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="shortcut icon" href="~/icon.ico" type="image/x-icon"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="fan">
+        <div class="container-fluid">
+            <div class="row center-block">
+                <div class="text-center">
+                    <h1>Saraswati College Of Engineering</h1>
+                    <h5>Plot No. 46, Sector 5, Near MSEB Sub Station, Kharghar, Navi Mumbai-410210 </h5>
+                </div>
+            </div>
+            <nav class="navbar-default">
+                <div class="container-fluid" id="menu">
+                     <div class="navbar-collapse collapse">
+                         <ul class="nav navbar-nav">
+                             <li><a runat="server" href="~/Login/Faculty/facultyhome.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                         </ul>
+                         <ul class="nav navbar-nav navbar-right">
+                             <li><a runat="server" href="~/Login/Faculty/facultySetting.aspx"><span class="glyphicon glyphicon-home"></span> Hello,
+                                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label></a></li>
+                             <li><a runat="server" href="~/Home.aspx"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                         </ul>
+                     </div>
+              </div>
+             </nav>
+        </div>
+        <div class="container-fluid">
+        <hr />
+            </div>
+            </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <div class="container-fluid">
+        <hr />
+            </div>
+          <nav class="navbar-default">
+             <div class="container-fluid">
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/Login/Faculty/Contact Us/Contact Us.aspx">Contact Us</a></li>
+                        <li><a runat="server" href="~/Login/Faculty/FAQ/FAQ.aspx">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+         </nav>
+    </div>
+    </form>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/js/bootstrap.min.js">
+    </script>
+</body>
+</html>
