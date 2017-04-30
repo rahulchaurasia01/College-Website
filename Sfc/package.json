@@ -1,0 +1,7 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "devDependencies": {
+    "crawler-js": "^2.0.1"
+  }
+}

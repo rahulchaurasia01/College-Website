@@ -1,0 +1,91 @@
+﻿<%--<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>--%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%: Page.Title %> - Saraswati College Of Engineering</title>
+    <style>
+       #fan{
+           background-color: #ff533d;
+       }
+       #nam{
+            color: black;
+       }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="shortcut icon" href="~/icon.ico" type="image/x-icon"/>
+    <link href="Style/colouring.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        <div>
+            <div id="fan">
+                <div class="container-fluid">
+                    <div class="row center-block">
+                        <div class="text-center" id="nam">
+                            <h1>Saraswati College Of Engineering</h1>
+                            <h5>Plot No. 46, Sector 5, Near MSEB Sub Station, Kharghar, Navi Mumbai-410210 </h5>
+                        </div>
+                    </div>
+                    <nav class="navbar-default" id="fam">
+                        <div class="container-fluid" id="menu">
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a runat="server" href="~/Home.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Department
+                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="../Department/Automobile Department/Automobileabout.aspx">AutoMobile Engineering</a></li>
+                                            <li><a href="../Department/Civil Department/Civilabout.aspx">Civil Engineering</a></li>
+                                            <li><a href="../Department/Computer Department/Computerabout.aspx">Computer Engineering</a></li>
+                                            <li><a href="../Department/It Department/Itabout.aspx">Information Engineering</a></li>
+                                            <li><a href="../Department/Mechanical Department/Mechanicalabout.aspx">Mechanical Engineering</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a runat="server" href="#"></a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a runat="server" href="Register.aspx"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                                    <li><a runat="server" href="Facultylogin.aspx"><span class="glyphicon glyphicon-log-in"></span> Faculty Login</a></li>
+                                    <li><a runat="server" href="StudentLogin.aspx"><span class="glyphicon glyphicon-log-in"></span> Student Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="container-fluid">
+                    <hr />
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="container-fluid">
+                <hr />
+            </div>
+            <nav class="navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a runat="server" href="Contact Us.aspx">Contact Us</a></li>
+                            <li><a runat="server" href="FAQ.aspx">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js">
+    </script>
+</body>
+</html>
